@@ -1,5 +1,5 @@
 {
-  "name": "node-pdfinfo",
+  "name": "pdfinfo",
   "version": "0.0.1",
   "description": "simple api for reading pdf meta info via xpdf's pdfinfo(1)",
   "main": "index.js",
