@@ -1,7 +1,7 @@
 {
   "name": "node-pdfinfo",
   "version": "0.0.1",
-  "description": "fluent api for reading pdf meta info from xpdf's pdfinfo(1)",
+  "description": "simple api for reading pdf meta info via xpdf's pdfinfo(1)",
   "main": "index.js",
   "directories": {
     "test": "test"
