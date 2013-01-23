@@ -1,0 +1,31 @@
+{
+  "name": "node-pdfinfo",
+  "version": "0.0.1",
+  "description": "fluent api for reading pdf meta info from xpdf's pdfinfo(1)",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ecarter/node-pdfinfo"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "should": "*",
+    "mocha": "*"
+  },
+  "keywords": [
+    "pdf",
+    "xpdf",
+    "pdfinfo",
+    "meta",
+    "postscript"
+  ],
+  "author": "Erin Carter",
+  "license": "MIT",
+  "readmeFilename": "README.md"
+}
