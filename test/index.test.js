@@ -1,4 +1,5 @@
 
+var fs = require('fs');
 var PDF = require('..');
 
 describe('#PDF', function(){
@@ -32,5 +33,17 @@ describe('#PDF', function(){
       done();
     })
   })
+
+  it('should return title from stream', function(done){
+    var stream = fs.createReadStream(__dirname + '/pdf/basic.pdf');
+    var pdf = PDF(stream);
+
+    pdf.exec(function(err, meta){
+      if (err) return done(err);
+      meta.title.should.equal('basic');
+      done();
+    })
+  })
+
 
 })
