@@ -25,6 +25,8 @@ A simple api for reading pdf meta info via [xpdf's](http://www.foolabs.com/xpdf)
       console.log('pdf info', meta)
     })
 
+You can also pass a readable stream into the first argument instead of a file.
+
 ## License
 
 MIT
