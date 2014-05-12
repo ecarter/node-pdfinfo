@@ -33,8 +33,19 @@ describe('#PDF', function(){
     })
   })
 
+  it('should throw error when a file is not a PDF', function(done){
+    var pdf = PDF(__dirname + '/pdf/dummy.txt');
+
+    pdf.exec(function(err, meta){
+      err.should.be.instanceof(Error);
+      done();
+    })
+  })
+
   it('should not crash when a file is not a PDF', function(done){
     var pdf = PDF(__dirname + '/pdf/dummy.txt');
+
+    pdf.errors = false;
 
     pdf.exec(function(err, meta){
       if (err) return done(err);
