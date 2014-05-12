@@ -33,4 +33,14 @@ describe('#PDF', function(){
     })
   })
 
+  it('should not crash when a file is not a PDF', function(done){
+    var pdf = PDF(__dirname + '/pdf/dummy.txt');
+
+    pdf.exec(function(err, meta){
+      if (err) return done(err);
+      meta.should.be.a.Object;
+      done();
+    })
+  })
+
 })
