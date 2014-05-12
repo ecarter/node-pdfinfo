@@ -15,8 +15,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "should": "*",
-    "mocha": "*"
+    "should": "3.3.1",
+    "mocha": "1.18.2"
   },
   "keywords": [
     "pdf",
