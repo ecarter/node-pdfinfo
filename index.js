@@ -1,3 +1,1 @@
-
-module.exports = require('./lib/pdfinfo');
-
+module.exports = require('./lib/pdfinfo')

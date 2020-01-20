@@ -1,8 +1,5 @@
 test:
-	@./node_modules/.bin/mocha \
-		--reporter spec \
-		--require should \
-		test/*.test.js
+	@./node_modules/.bin/mocha test/*
 
 clean:
 	@rm -fr node_modules
